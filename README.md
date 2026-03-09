@@ -52,6 +52,34 @@
   <img src="images/003.png" alt="OpenClaw 安装执行过程" width="760">
 </p>
 
+### 更多安装界面补充
+
+以下截图用于补充展示后续步骤、执行输出和结果界面，方便你更直观地了解这套安装流程的完整度。
+
+**补充截图 01**
+
+<p align="center">
+  <img src="images/004.png" alt="OpenClaw 安装过程补充截图 01" width="860">
+</p>
+
+**补充截图 02**
+
+<p align="center">
+  <img src="images/005.png" alt="OpenClaw 安装过程补充截图 02" width="860">
+</p>
+
+**补充截图 03**
+
+<p align="center">
+  <img src="images/006.png" alt="OpenClaw 安装过程补充截图 03" width="860">
+</p>
+
+**补充截图 04**
+
+<p align="center">
+  <img src="images/007.png" alt="OpenClaw 安装过程补充截图 04" width="860">
+</p>
+
 ## 适合哪些人
 
 - 想快速跑通 OpenClaw，但不想自己一点点踩坑的人

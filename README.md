@@ -1,179 +1,346 @@
-# OpenClaw Installer
+<div align="center">
 
-<p align="center">
-  <img src="images/openclaw.png" alt="OpenClaw Installer" width="860">
+# Tentacle Claw
+
+### 把 OpenClaw 的运行、编排、模型、插件、技能、配置与运维，真正收进一个桌面控制台
+
+<p>
+  <img src="https://img.shields.io/badge/Desktop-Control%20Center-0f172a?style=for-the-badge" alt="desktop">
+  <img src="https://img.shields.io/badge/OpenClaw-Dashboard%20Workspace-2563eb?style=for-the-badge" alt="dashboard">
+  <img src="https://img.shields.io/badge/Focus-AI%20Workflow%20Ops-7c3aed?style=for-the-badge" alt="focus">
 </p>
 
-一个面向 OpenClaw 使用场景的安装与部署方案展示页。
-
-这个仓库的定位不是开源脚本仓库，而是用于介绍能力、展示效果和对接需求。核心安装脚本、配置模板、代理方案和完整交付内容不会在这里公开。
-
-## 这套方案解决什么问题
-
-很多人在实际部署 OpenClaw 时，卡点并不在“会不会敲命令”，而在于整个链路的落地细节：
-
-- 跨平台环境准备麻烦，Windows、Linux、macOS 的处理方式不同
-- Node.js、依赖源、网络访问和运行环境容易踩坑
-- 模型接入、渠道配置、机器人接入步骤零散
-- QQ、企业微信等接入方案对新手不友好
-- 部署完成后，日志、排错、维护没有统一入口
-
-这套方案的目标，就是把这些环节整理成一条更省时间、可交付、可复用的流程。
-
-## 能力概览
-
-- 支持 Windows / Linux / macOS 的安装与部署流程
-- 支持环境检测、依赖准备、基础运行环境初始化
-- 支持主流模型供应商接入与常见配置场景
-- 支持 QQ、企业微信等机器人接入需求
-- 支持镜像加速、代理转发、网络受限场景优化
-- 支持安装日志留存与常见问题排查
-- 支持按你的使用场景做定制化交付
-
-## 安装过程展示
-
-下面这些截图展示的是实际安装过程中的一部分界面，方便你先判断这套方案是不是你要的方向。
-
-### 环境检测与初始化
-
-<p align="center">
-  <img src="images/001.png" alt="OpenClaw 安装环境检测界面" width="860">
+<p>
+  一个更适合 <strong>官网展示</strong>、<strong>项目交付</strong>、<strong>团队演示</strong>、<strong>日常使用</strong> 的 OpenClaw 桌面工作台。<br>
+  首页看全局，模块分层清晰，状态与配置一眼可见，操作入口集中前置。
 </p>
 
-### Node.js 环境配置
-
-<p align="center">
-  <img src="images/002.png" alt="Node.js 环境配置过程" width="860">
+<p>
+  <img src="images/dashboard/dashboard.png" alt="Tentacle Claw Dashboard" width="100%">
 </p>
 
-### OpenClaw 安装执行
+### 一句话理解它
+
+**Tentacle Claw = 一个围绕 OpenClaw 构建的桌面化控制台外壳，用于把状态、流程、资源和配置统一到同一个工作台。**
+
+</div>
+
+---
+
+## 快速导航
+
+- [为什么值得做成一个产品首页](#为什么值得做成一个产品首页)
+- [核心价值](#核心价值)
+- [4 个最重要的卖点](#4-个最重要的卖点)
+- [页面展示](#页面展示)
+- [适用场景](#适用场景)
+- [产品结构](#产品结构)
+- [适合谁](#适合谁)
+- [FAQ](#faq)
+- [截图清单](#截图清单)
+- [实测信息](#实测信息)
+- [结尾 CTA](#结尾-cta)
+
+---
+
+## 为什么值得做成一个产品首页
+
+很多控制台在真正使用时，问题不在于“功能有没有”，而在于：
+
+- 页面很多，但入口很散
+- 能力很多，但状态不集中
+- 配置很多，但不适合日常使用
+- 可以跑起来，但不好展示、也不好交付
+
+Tentacle Claw 想解决的，就是这类“最后一公里”的体验问题：
+
+> 把 OpenClaw 的运行态、配置态、资源态、流程态统一收敛成一个真正像产品的桌面工作台。
+
+它不是单一页面，也不是简单导航集合，而是一套带有明显产品结构的控制台界面。
+
+---
+
+## 核心价值
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>统一总览</h3>
+      <p>Dashboard 集中承接状态、建议、通知、活动和快捷操作，不再来回切页面找信息。</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>统一操作</h3>
+      <p>高频动作前置，启动、停止、打开控制台、进入工作流和配置中心都更直接。</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>统一展示</h3>
+      <p>模块清晰、视觉统一，天然适合官网展示、产品原型、客户演示和交付界面。</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 4 个最重要的卖点
+
+### 1. 首页不是装饰，是控制中心
+
+你在 Dashboard 首页就能快速判断：
+
+- 引擎是否运行
+- 配置是否可用
+- 控制台是否可打开
+- 工作流 / 插件 / 技能是否准备就绪
+- 当前最值得优先处理的事情是什么
 
 <p align="center">
-  <img src="images/003.png" alt="OpenClaw 安装执行过程" width="760">
+  <img src="images/dashboard/dashboard-home.png" alt="dashboard-home" width="100%">
 </p>
 
-### 更多安装界面补充
+### 2. 高频操作被放到了最前面
 
-以下截图用于补充展示后续步骤、执行输出和结果界面，方便你更直观地了解这套安装流程的完整度。
+这类产品最怕“能做，但很难点到”。
 
-**补充截图 01**
+Tentacle Claw 直接把高频动作前置：
+
+- 刷新工作台
+- 启动 / 停止引擎
+- 打开控制台
+- 进入工作流、模型、插件、技能、设置
 
 <p align="center">
-  <img src="images/004.png" alt="OpenClaw 安装过程补充截图 01" width="860">
+  <img src="images/dashboard/dashboard-entries.png" alt="dashboard-entries" width="100%">
 </p>
 
-**补充截图 02**
+### 3. 运行态、配置态、资源态打通在一屏
+
+很多桌面工作台的问题不是没信息，而是信息彼此割裂。
+
+这里把关键状态集中展示：
+
+- 版本 / PID / 端口 / 内存
+- 配置路径与配置校验
+- 控制台入口状态
+- 工作流、插件、技能准备情况
 
 <p align="center">
-  <img src="images/005.png" alt="OpenClaw 安装过程补充截图 02" width="860">
+  <img src="images/dashboard/dashboard-status.png" alt="dashboard-status" width="49%">
+  <img src="images/dashboard/dashboard-runview.png" alt="dashboard-runview" width="49%">
 </p>
 
-**补充截图 03**
+### 4. 这套结构天然适合继续产品化
+
+当前结构非常适合继续往成熟产品迭代：
+
+- 首页做统一总览
+- 执行层做日常操作
+- 能力层做资源管理
+- 系统层做底层维护
+
+这意味着它不仅适合“演示”，也适合“继续做大”。
+
+---
+
+# 页面展示
+
+## Dashboard · 首页总览
 
 <p align="center">
-  <img src="images/006.png" alt="OpenClaw 安装过程补充截图 03" width="860">
+  <img src="images/dashboard/dashboard.png" alt="dashboard" width="100%">
 </p>
 
-**补充截图 04**
+**你会看到：**
+- 全局状态
+- 当前建议
+- 常用操作
+- 通知提醒
+- 最近活动
+
+---
+
+## 执行中心 · 智能对话工作台
 
 <p align="center">
-  <img src="images/007.png" alt="OpenClaw 安装过程补充截图 04" width="860">
+  <img src="images/dashboard/chat.png" alt="chat" width="100%">
 </p>
 
-## 适合哪些人
+**适合：** 对话承接、会话管理、模型状态查看、输入交互。
 
-- 想快速跑通 OpenClaw，但不想自己一点点踩坑的人
-- 需要在本地或服务器上完成部署的人
-- 想接入机器人渠道，但缺少完整配置经验的人
-- 希望有人直接给出可落地方案，而不是只看碎片教程的人
-- 需要代部署、代配置、问题排查、后续支持的人
+---
 
-## 常见咨询场景
-
-如果你属于下面这些情况，通常不适合继续自己硬试，直接沟通会更省时间：
-
-- 安装过程报错很多，自己排查了一圈还是跑不起来
-- 本地能装，服务器环境却始终有兼容性问题
-- 想接模型、接渠道、接机器人，但配置项太多
-- 网络环境特殊，需要镜像、代理或替代下载方案
-- 想尽快交付给团队或客户，不能一直卡在部署阶段
-- 希望有人直接给出完整方案，而不是自己拼凑教程
-
-## 说明
-
-- 当前仓库仅用于展示，不提供核心源码
-- 不公开完整安装脚本、私有配置和交付细节
-- 如果你需要的是“能直接落地”的方案，而不是只看演示页面，可以直接联系我
-
-## 可提供的内容
-
-- 安装包或部署方案说明
-- 一对一部署指导
-- 常见模型接入与参数配置协助
-- QQ / 企业微信接入协助
-- 代理、镜像、网络受限环境处理建议
-- 定制化部署与后续维护支持
-
-## 对接方式
-
-你可以按下面几种需求来找我：
-
-- 想先了解是否适合你的环境，可以先发你的系统信息和目标场景
-- 已经部署到一半卡住了，可以直接发报错截图或日志
-- 想要完整可落地方案，可以直接说明你的机器环境、模型需求和接入渠道
-- 如果你是给公司或客户做项目，也可以直接谈定制交付和后续支持
-
-## 常见问题
-
-### 这是开源项目吗
-
-不是。这个仓库是展示入口，不公开完整安装脚本和交付实现。
-
-### README 里的内容能不能让我自己完全复刻
-
-不能。这份 README 的作用是帮助你了解方案方向，不是提供完整复刻材料。
-
-### 可以只咨询，不购买完整方案吗
-
-可以，具体看你的问题复杂度和你希望我介入到什么程度。
-
-### 能不能做定制
-
-可以。不同系统环境、模型来源、渠道接入和网络条件，处理方式都不一样，定制是常见需求。
-
-## 联系前建议准备
-
-为了节省双方时间，建议你在联系时尽量带上这些信息：
-
-- 你的系统环境，例如 Windows、Linux 还是 macOS
-- 你准备部署在本地电脑、云服务器，还是企业内部机器
-- 你想接入的模型来源
-- 你是否需要接 QQ、企业微信或其他渠道
-- 你现在卡住的步骤、报错截图或日志
-- 你希望我提供的是咨询、协助排障，还是完整交付
-
-## 联系方式
-
-需要完整方案、演示、定制部署或技术支持，直接加我微信。
-
-- 微信: `worker_680`
-- 邮箱: `admin@zqzqq.com`
-- 添加微信请备注: `OpenClaw`
-- 如果你方便文字沟通，也可以先发邮件说明你的系统环境、目标需求和当前卡点
+## 执行中心 · 运维场景
 
 <p align="center">
-  <img src="images/wechat.jpg" alt="微信二维码" width="360">
+  <img src="images/dashboard/ops.png" alt="ops" width="100%">
 </p>
 
-## 提醒
+**适合：** 启动 / 重启、查看运行状态、确认控制台入口、查看日志。
 
-如果你只是想找一个公开仓库直接下载全部核心内容，这里不提供。
+---
 
-如果你想要的是：
+## 执行中心 · 工作流工作台
 
-- 能跑起来
-- 少踩坑
-- 有人协助配置
-- 能根据你的环境做调整
+<p align="center">
+  <img src="images/dashboard/workflow.png" alt="workflow" width="100%">
+</p>
 
-那这个仓库就是给你看的入口页。
+**适合：** 模板起步、Builder 编排、流程管理、激活状态查看。
+
+---
+
+## 能力中心 · 大模型配置中心
+
+<p align="center">
+  <img src="images/dashboard/llm.png" alt="llm" width="100%">
+</p>
+
+**适合：** 供应商接入、模型池维护、全局模型槽位、多 Agent 配置。
+
+---
+
+## 能力中心 · 插件库 / 技能库
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="images/dashboard/plugins.png" alt="plugins" width="100%">
+    </td>
+    <td width="50%" valign="top">
+      <img src="images/dashboard/skills.png" alt="skills" width="100%">
+    </td>
+  </tr>
+</table>
+
+**适合：** 统一管理插件与技能，降低资源维护复杂度。
+
+---
+
+## 系统中心 · 引擎配置 / 设置 / 帮助
+
+<table>
+  <tr>
+    <td width="34%" valign="top">
+      <img src="images/dashboard/openclaw-config.png" alt="config" width="100%">
+    </td>
+    <td width="33%" valign="top">
+      <img src="images/dashboard/settings.png" alt="settings" width="100%">
+    </td>
+    <td width="33%" valign="top">
+      <img src="images/dashboard/tentacle-help.png" alt="help" width="100%">
+    </td>
+  </tr>
+</table>
+
+**适合：** 底层配置维护、桌面体验管理、文档沉淀与操作说明。
+
+---
+
+## 适用场景
+
+### 1. 官网展示
+当你需要把系统讲清楚、展示清楚，这种结构比零散截图更有说服力。
+
+### 2. 项目交付
+当你要把 OpenClaw 能力整合成一个可交付的桌面界面，这种结构天然更合适。
+
+### 3. 团队演示
+适合做内部评审、客户汇报、方案演示、原型确认。
+
+### 4. 日常使用
+不仅能看，而且适合频繁点、频繁进、频繁切换，是可真正落地的工作台形态。
+
+---
+
+## 产品结构
+
+### 总入口
+- Dashboard
+
+### 执行层
+- 智能对话工作台
+- 运维场景
+- 工作流工作台
+
+### 能力层
+- 大模型配置中心
+- 插件库
+- 技能库
+
+### 系统层
+- 引擎配置
+- 设置
+- 帮助中心
+
+**这套结构最大的优势：** 好看、好讲、好用、好扩展。
+
+---
+
+## 适合谁
+
+- 想把 OpenClaw 做成统一工作台的人
+- 需要一个更适合官网展示和演示的控制台界面的人
+- 想把零散能力整合成完整产品外壳的人
+- 想同时兼顾运行、配置、资源管理的人
+- 想继续把这个方向做成产品的人
+
+---
+
+## FAQ
+
+### 这是静态页面吗？
+不是。根据本次访问结果，页面内容会随着本地环境状态变化而变化。
+
+### 它更偏运维，还是更偏业务？
+两者都有：运维场景和引擎配置偏运维；工作流、模型配置、对话工作台偏业务执行。
+
+### 它适合继续扩展吗？
+适合。当前模块边界已经很清晰，继续扩展权限、账号、更多资源管理能力会比较顺。
+
+### 为什么它适合做官网首页展示？
+因为它具备完整产品结构、清晰模块边界和统一视觉语言，天然比单点截图更适合表达价值。
+
+---
+
+## 截图清单
+
+截图位于 `images/dashboard/`：
+
+- `dashboard.png`
+- `dashboard-home.png`
+- `dashboard-status.png`
+- `dashboard-runview.png`
+- `dashboard-entries.png`
+- `dashboard-notices.png`
+- `dashboard-activity.png`
+- `chat.png`
+- `ops.png`
+- `workflow.png`
+- `llm.png`
+- `plugins.png`
+- `skills.png`
+- `openclaw-config.png`
+- `settings.png`
+- `tentacle-help.png`
+- `routes-summary.json`
+
+---
+
+## 实测信息
+
+- 页面地址：`http://localhost:5173/dashboard`
+- 实测日期：**2026-04-06**
+- 页面内容基于本地运行环境动态生成
+
+---
+
+## 结尾 CTA
+
+<div align="center">
+
+## 如果你想要的不是零散页面，而是一套真正像产品的桌面控制台
+
+### 那么 Tentacle Claw 已经非常接近那个答案了。
+
+**它不是只会展示，而是已经具备“可展示、可使用、可交付、可扩展”的产品雏形。**
+
+</div>
